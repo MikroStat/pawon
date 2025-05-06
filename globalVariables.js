@@ -1,3 +1,4 @@
 // global variabel
 
-var demiMasaAdj = -1;
+// penyesuaian tanggal hijriah antara hilal dan hisab
+var pDemiMasaAdj = -1;
