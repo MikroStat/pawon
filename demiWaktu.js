@@ -7,7 +7,8 @@ function gmod(n,m){
 }
 
 function hijriyahCalender(adjust){
-	var today = new Date();
+	// decl awal var
+	let today = new Date();
 	if(adjust) {
 		let adjustmili = 1000*60*60*24*adjust; 
 		let todaymili = today.getTime()+adjustmili;
@@ -75,9 +76,9 @@ function hijriyahCalender(adjust){
 	let im = Math.floor((z+28.5001)/29.5);
 	if(im==13) im = 12;
 	let id = z-Math.floor(29.5001*im-29);
-
-	var myRes = new Array(8);
-
+	
+	// decl awal var
+	let myRes = new Array(8);
 	myRes[0] = day; //calculated day (CE)
 	myRes[1] = month-1; //calculated month (CE)
 	myRes[2] = year; //calculated year (CE)
@@ -107,7 +108,7 @@ function hCalender(adjustment) {
 
 
 function demiMasa() {
-
+	
 	const d = new Date();
 	let kaping = d.getDate();
 	let dintenIx = d.getDay();
@@ -119,6 +120,7 @@ function demiMasa() {
   	let pasaran = ['Pahing', 'Pon', 'Wage', 'Kliwon', 'Legi'];
 	let sasih = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',
 					'Juli', 'Agustus', 'September', 'Oktober', 'Nopember', 'Desember'];
+	// deklarasi di dalam Template
 	let dHijriyah = hCalender(pDemiMasaAdj);
 
 	let mSty = '<p style="text-align: right; line-height: 1.4; background-color: #f4f4f4; font-size: small; font-weight: bold; opacity: 0.7; font-family: Roboto Mono; margin-bottom: 64px;">';
