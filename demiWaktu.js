@@ -131,3 +131,25 @@ function demiMasa() {
    document.getElementById('walAshri').innerHTML = waktos; 
 	
 }
+
+function wanci() {
+	const d = new Date();
+	let hour = d.getHours();
+
+	let k = 'larut malam';
+	if(hour > 3 && hour < 5 ) { 
+		k = 'fajar';
+	} else if (hour >= 5 && hour < 09.30) {
+		k = 'pagi';
+	} else if (hour >= 09.30 && hour < 15) {
+		k = 'siang';
+	} else if(hour >= 15 && hour < 18) {
+		k = 'sore';
+	} else if(hour >= 18 && hour < 19) {
+		k = 'petang';
+	} else if(hour >= 19 && hour < 24) {
+		k = 'malam';
+	}
+	
+	return k;
+}
