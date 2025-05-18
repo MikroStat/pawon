@@ -14,6 +14,10 @@ function callApi() {
    });
 }
 
+function asalQ() {
+	return Q = [];
+}
+
 function dbDirectLink(folder, file, rlKey, sts) {
 	const brand  = 'https://dl.dropboxusercontent.com/scl/fi/';
 	let dbUrl = brand + folder + file +
