@@ -54,3 +54,26 @@ function dbEscape(inpKode) {
 	return Q;
 	// document.getElementById('demo').innerHTML = ' --> ' + Q;
 }
+
+function iView() {
+  let iUrl = '<figure>' + 
+	'<img ' + 
+	'src=\"' + arguments[0] + '\"' +
+	'class=\"' + arguments[1] + '\"' +
+	'alt=\"' + arguments[3] + '\"' +					
+	'/>' +
+	'<figcaption>' + arguments[2] + '</figcaption>' +
+	'</figure>';
+					
+  return iUrl;
+}
+
+function qip(imgKe) {
+  let g = new Image();
+  let gInp = dbEscape(imgKe);
+  g.src = gInp[0];
+  Q = 'Gambar ' + imgKe + '. ' + gInp[1];
+  let gUrl = iView(g.src, 'qipGy', Q);
+
+  document.getElementById('x' + imgKe).innerHTML = gUrl; 
+}
