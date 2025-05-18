@@ -1,3 +1,46 @@
+/* mode 2 kolom */
+.ayat
+{
+	font-family: Helvetica, sans-serif;
+    font-size: normal;
+	line-height: 1.4;
+    float: left; /* def auto */
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2.1em;
+    -webkit-column-rule: 3px solid #f9f9f9;
+    -moz-column-rule: 3px solid #f9f9f9;    
+    -moz-column-gap: 2.1em; 
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+.ayat img {
+    vertical-align: middle;
+    width:auto;
+    height:auto;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px)
+{ 
+  .ayat
+  {
+    width: 100%;
+   	-webkit-column-count: 1; 
+    -moz-column-count: 1;
+    column-count: 1;
+	font-size: 120%;
+  }
+  .ayat img
+  {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    display: block;
+  }
+}
+
 
 /* catatan dalam posting */
 .bedug {
@@ -9,4 +52,28 @@
    margin-bottom : 14px;
    padding-left : 12px;
    border-left: 3px solid #daa520; 
+}
+
+/* layout table */
+
+.qt {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.qt td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.qt tr:nth-child(even){background-color: #f2f2f2;}
+
+.qt tr:hover {background-color: #ddd;}
+
+.qt th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
 }
