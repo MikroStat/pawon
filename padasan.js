@@ -37,7 +37,7 @@ function idDilengkapiSpasi(inpId) {
 
 // menyusun kembali kode menjadi directLink
 // output [0] : id
-//			 [1] : directLink
+//	  [1] : directLink
 //        [2] : deskripsi
 function linkEscape(inpKode) {
 	// deteksi tipe get.Element
@@ -51,8 +51,8 @@ function linkEscape(inpKode) {
 	   z = document.getElementsByTagName("rp")[inpKode].innerHTML;
 	   x = document.getElementsByTagName("rp")[inpKode].id;		
 	} else {
-		z  = document.getElementById(inpKode).innerHTML;
-		x  = document.getElementById(inpKode).id;	
+	   z  = document.getElementById(inpKode).innerHTML;
+	   x  = document.getElementById(inpKode).id;	
 	}
 	let c = z.split('/');
 	q[0] = x;
