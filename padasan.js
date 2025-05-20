@@ -1,12 +1,5 @@
 // javaScript yang berlaku untuk semua modul
 
-// variabel global
-var Q = [];
-
-function asalQ() {
-	return Q = [];
-}
-  
 function spRepeat(jml){
 	let sp = '';
 	for (let i = 0; i < jml; i++) {
