@@ -1,0 +1,7 @@
+function spRepeat(jml){
+	let sp = '';
+	for (let i = 0; i < jml; i++) {
+		sp += '&nbsp;';
+	}
+	return sp;	
+}
