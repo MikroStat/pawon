@@ -15,7 +15,6 @@ function idSapasi(inpId) {
 			codeSembilan = 57;
 			
 	let sp = '';
-
 	if (pj <= idMax) sp = inpId + '\"' + spRepeat(idMax-pj);
 		
 	// jika sebuah sitasi
