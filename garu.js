@@ -1,3 +1,4 @@
+// menyisipkan spasi
 function spRepeat(jml){
 	let sp = '';
 	for (let i = 0; i < jml; i++) {
