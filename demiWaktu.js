@@ -123,7 +123,14 @@ function demiMasa() {
 	// deklarasi di dalam Template
 	let dHijriyah = hCalender(pDemiMasaAdj);
 
-	let mSty = '<p style="text-align: right; line-height: 1.4; background-color: #f4f4f4; font-size: small; font-weight: bold; opacity: 0.7; font-family: Roboto Mono; margin-bottom: 64px;">';
+	let mSty = '<p style="text-align: right;' +
+		'line-height: 1.4;' +
+		'background-color: #f4f4f4;' +
+		'font-size: small;' +
+		'font-weight: bold;' +
+		'opacity: 0.7;' +
+		'font-family: Roboto Mono;' +
+		'margin-bottom: 64px;">';
 	
 	let masehi = mSty + '<u>' + dinten[dintenIx] + ' ' + pasaran[pasaranIx] + ', ' + kaping + ' ' + sasih[sasihIx] + ' ' + tahun + '</u>&nbsp;';
 	let waktos = masehi + '<br/>' + dHijriyah + '&nbsp;</p>';
