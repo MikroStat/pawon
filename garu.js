@@ -28,3 +28,46 @@ function idSapasi(inpId) {
 	sp += '>';
 	return sp;
 }
+
+// menyusun kembali kode menjadi directLink
+// output [0] : id
+//	  [1] : directLink
+//        [2] : deskripsi
+function linkMulih(inpKode) {
+	// deteksi tipe get.Element
+	let q = [];
+	let x, z;
+	const y;
+	
+	y = inpKode.charCodeAt(0);
+	if (y >= 48 & y <= 57) {
+		inpKode -= 1; // meyesuaikan start [0]
+	   z = document.getElementsByTagName("rp")[inpKode].innerHTML;
+	   x = document.getElementsByTagName("rp")[inpKode].id;		
+	} else {
+	   z  = document.getElementById(inpKode).innerHTML;
+	   x  = document.getElementById(inpKode).id;	
+	}
+	let c = z.split('/');
+	q[0] = x;
+	q[1] = c[0];
+	q[2] = c[1];
+	
+	// document.getElementById('tenjo').innerHTML = q;
+	return q;
+}
+
+function iView() {
+  let iUrl = '<figure>' + 
+	'<img ' + 
+	'src=\"' + arguments[0] + '\"' +
+	'class=\"' + arguments[1] + '\"' +
+	'alt=\"' + arguments[3] + '\"' +					
+	'/>' +
+	'<figcaption>' + arguments[2] + '</figcaption>' +
+	'</figure>';
+					
+  return iUrl;
+}
+
+</script>
