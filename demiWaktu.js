@@ -132,7 +132,13 @@ function demiMasa() {
 		'font-family: Roboto Mono;' +
 		'margin-bottom: 64px;">';
 	
-	let masehi = mSty + '<u>' + dinten[dintenIx] + ' ' + pasaran[pasaranIx] + ', ' + kaping + ' ' + sasih[sasihIx] + ' ' + tahun + '</u>&nbsp;';
+	let masehi = mSty + '<u>' + 
+		dinten[dintenIx] + ' ' + 
+		pasaran[pasaranIx] + ', ' + 
+		kaping + ' ' + 
+		sasih[sasihIx] + ' ' + 
+		tahun + '</u>&nbsp;';
+	
 	let waktos = masehi + '<br/>' + dHijriyah + '&nbsp;</p>';
 	
    document.getElementById('walAshri').innerHTML = waktos; 
