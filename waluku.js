@@ -26,7 +26,7 @@ function metaLink(e) {
 	let x, z;
 
 	const q = e.charCodeAt(0);
-	if ((e.length < 3) && (q >= 48 & q <= 57)) {
+	if ((e.length < 2) && (q >= 48 & q <= 57)) {
 	   e -= 1; // meyesuaikan start [0]
 	   z = document.getElementsByTagName("rp")[e].innerHTML;
 	   x = document.getElementsByTagName("rp")[e].id;
