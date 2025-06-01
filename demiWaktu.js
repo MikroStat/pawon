@@ -130,8 +130,9 @@ function demiMasa() {
 		'font-weight: bold;' +
 		'opacity: 0.7;' +
 		'font-family: Roboto Mono;' +
-		'margin-top: 12px;' +		
-		'margin-bottom: 64px;">';
+		'margin-top: 0px;' +	// 12px
+		'padding: 2px;' +
+		'margin-bottom: 0px;">';  // 64px
 	
 	let masehi = mSty + '<u>' + 
 		dinten[dintenIx] + ' ' + 
