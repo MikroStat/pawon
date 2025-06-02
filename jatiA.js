@@ -148,10 +148,10 @@ function idSapasi(e) {
     } else {
 	y = m;
 	// halaman romawi tetap ditulis angka   
-	if ( chBil(e.at(0)) || chRomawi(e.at(0)) ) y = h;
+	if ( chBil(e.at(0)) ) y = h;
 	if ( p == 1) {
-	   e += 'Q';
-	   y -= 1;
+	    e += 'Q';
+	    y -= 1;
 	}
 	sp = e + '\"' + spDeui(y-p);
     }
