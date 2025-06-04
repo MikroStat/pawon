@@ -1,0 +1,55 @@
+/* layout table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 1.20;
+}
+
+table th {
+  //padding-top: 12px;
+  //padding-bottom: 12px;
+  padding: 8px;
+  text-align: left;
+  background-color: #ccc; /* #04AA6D */
+  border: 1px solid #aaa;
+  line-height: .80;
+}
+
+table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  line-height: .80;
+}
+
+table tr:nth-child(odd){       /* even  */
+ 	background-color: #f2f2f2;
+    line-height: .80;
+}
+
+table tr:hover {
+	background-color: #ddd;
+}
+
+table caption {
+	margin-top: 18px;
+    padding-bottom: 18px;
+  	text-align: left;
+	// margin-left: -2.0em;
+	text-indent: -4em;
+	padding-left: 4em;
+}
+
+table tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+  color: grey;
+}
+
+tfoot {
+  display: table-footer-group;
+  vertical-align: middle;
+  border-color: inherit;
+  color: green;
+}
