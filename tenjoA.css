@@ -1,0 +1,124 @@
+/* mode 2 kolom */
+.ayat
+{
+	font-family: Helvetica, sans-serif;
+   font-size: normal;
+	line-height: 1.4;
+    float: left; /* def auto */
+    -webkit-column-count: 2;
+    -webkit-column-gap: 2.1em;
+    -webkit-column-rule: 3px solid #f9f9f9;
+    -moz-column-rule: 3px solid #f9f9f9;    
+    -moz-column-gap: 2.1em; 
+    -moz-column-count: 2;
+    column-count: 2;
+}
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px)
+{ 
+  .ayat
+  {
+    width: 100%;
+   	/* -webkit-column-count: 1; */
+    /* -moz-column-count: 1; */
+    column-count: 1;
+	font-size: 120%;
+  }
+
+}
+
+
+/* catatan dalam posting */
+.bedug {
+   color : gray;
+   font-size : 80%;
+   font-family:sans-serif;
+   line-height: 1.20;
+   margin-top : 14px;
+   margin-bottom : 14px;
+   padding-left : 12px;
+   border-left: 2px solid #daa520; 
+}
+
+.qtr {
+  	margin-top: 0px;
+	text-indent: -2em;
+	/* margin-left: 2em; */
+	padding-left: 2em;
+	/* color: DarkSlateGrey; */
+    color: black;
+	font-size: 63%;
+	line-height: 1.20;
+	text-align: left;
+}
+
+.qtr hr {
+  	/* margin-top: 52px; */
+	border-top: 2px solid LightGray;
+	margin-left: -2.0em;
+	padding-left: 0px;
+	// margin-left: 0px;
+	width:63%; 
+}  
+
+
+/* layout table */
+
+.qtab {
+  border-collapse: collapse;
+  width: 100%;
+  line-height: 1.20;
+}
+
+.qtab th {
+  //padding-top: 12px;
+  //padding-bottom: 12px;
+  padding: 8px;
+  text-align: left;
+  background-color: #ccc; /* #04AA6D */
+  border: 1px solid #aaa;
+  line-height: .80;
+  font-weight: 500;
+}
+
+.qtab td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  line-height: .80;
+}
+
+.qtab tr:nth-child(odd){       /* even  */
+ 	background-color: #f2f2f2;
+    line-height: .80;
+}
+
+.qtab tr:hover {
+	background-color: #ddd;
+}
+
+.qtab caption {
+	margin-top: 18px;
+    padding-bottom: 16px;
+  	text-align: left;
+	// margin-left: -2.0em;
+	text-indent: -2.0cm;
+	padding-left: 3.75em;
+}
+
+/* catatan di bawah tabel */
+.qtn {
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-size: 80%;
+	color: grey;
+}
+
+.qtn ul, .qtn ol {
+	margin: 4px;
+}
+
+.qtn ul, .qtn ol, .qtn li {
+    line-height: 1.20;
+}
