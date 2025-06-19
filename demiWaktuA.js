@@ -132,7 +132,7 @@ function demiMasa() {
 		'font-family: Roboto Mono;' +
 		'padding: 2px;' +		
 		'margin-top: 0px;' +	// 12px
-		'margin-right: 12px;' +	// 12px	
+		'margin-right: 64px;' +	// 12px	
 		'margin-bottom: 0px;">';  // 64px
 	
 	let masehi = mSty + '<u>' + 
