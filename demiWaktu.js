@@ -126,9 +126,10 @@ function demiMasa() {
 	let mSty = '<p style="float: right;' +
 		'line-height: 1.4;' +
 		'background-color: rgb(114, 114, 114);' +
+		'background-image: linear-gradient(to left, black, grey);' +
 		'font-size: small;' +
-		'font-weight: bold;' +
-		'color: #000000;' +  // opacity: 0.7
+		'font-weight: 500;' +
+		'color: #ffffff;' +  // opacity: 0.7
 		'font-family: Roboto Mono;' +
 		'padding: 0px;' +		// 2px
 		'margin-top: 0px;' +	// 12px
