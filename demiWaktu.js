@@ -123,26 +123,30 @@ function demiMasa() {
 	// deklarasi di dalam Template
 	let dHijriyah = hCalender(pDemiMasaAdj);
 
-	let mSty = '<p style="text-align: right;' +
+	let mSty = '<p style="float: right;' +
 		'line-height: 1.4;' +
-		'background-color: #f4f4f4;' +
+		'background-color: rgb(114, 114, 114);' +
 		'font-size: small;' +
 		'font-weight: bold;' +
-		'opacity: 0.7;' +
+		'color: #000000;' +  // opacity: 0.7
 		'font-family: Roboto Mono;' +
-		'padding: 2px;' +		
+		'padding: 0px;' +		// 2px
 		'margin-top: 0px;' +	// 12px
-		'margin-right: 12px;' +	// 12px	
+		'margin-right: 0px;' +	// 12px	
 		'margin-bottom: 0px;">';  // 64px
 	
-	let masehi = mSty + '<u>' + 
+	let masehi = mSty + '&nbsp;<u>' + 
 		dinten[dintenIx] + ' ' + 
 		pasaran[pasaranIx] + ', ' + 
 		kaping + ' ' + 
 		sasih[sasihIx] + ' ' + 
 		tahun + '</u>&nbsp;';
 	
-	let waktos = masehi + '<br/>' + dHijriyah + '&nbsp;</p>';
+	let waktos = masehi + 
+					'<br/>' + 
+					'<span style="float: inherit;">' + 
+					dHijriyah + '&nbsp;</span>' + 
+					'</p>';
 	
    document.getElementById('walAshri').innerHTML = waktos; 
 	
