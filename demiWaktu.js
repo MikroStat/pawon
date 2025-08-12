@@ -127,7 +127,7 @@ function demiMasa() {
 		'line-height: 1.4;' +
 		'background-color: rgb(114, 114, 114);' +
 		'background-image: linear-gradient(to left, black, rgb(220, 220, 220));' +
-		'font-size: small;' +
+		'font-size: 63%;' +
 		'font-weight: 500;' +
 		'color: #ffffff;' +  // opacity: 0.7
 		'font-family: Roboto Mono;' +
@@ -174,3 +174,4 @@ function wanci() {
 	
 	return k;
 }
+
